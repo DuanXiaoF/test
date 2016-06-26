@@ -12,4 +12,4 @@ Write a commit message that describes your changes.
 Click Commit changes button.
 
 
-github学习，测试文档！
+git学习，测试文档！
