@@ -1,4 +1,206 @@
-﻿2016-06-26 19:57:09.9622|ERROR|thread:29|SoftwareUpdateViewModel|Checking for application update failed.
-=====================================================
-
-fffffffff
+2016-06-26 19:57:09.9622|ERROR|thread:29|SoftwareUpdateViewModel|Checking for application update failed.
+System.Deployment.Application.DeploymentDownloadException: 下载 http://github-windows.s3.amazonaws.com/GitHub.application 未成功。 ---> System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.Deployment.Application.SystemNetDownloader.DownloadSingleFile(DownloadQueueItem next)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Deployment.Application.SystemNetDownloader.DownloadSingleFile(DownloadQueueItem next)
+   在 System.Deployment.Application.SystemNetDownloader.DownloadAllFiles()
+   在 System.Deployment.Application.FileDownloader.Download(SubscriptionState subState)
+   在 System.Deployment.Application.DownloadManager.DownloadManifestAsRawFile(Uri& sourceUri, String targetPath, IDownloadNotification notification, DownloadOptions options, ServerInformation& serverInformation)
+   在 System.Deployment.Application.DownloadManager.DownloadDeploymentManifestDirect(SubscriptionStore subStore, Uri& sourceUri, TempFile& tempFile, IDownloadNotification notification, DownloadOptions options, ServerInformation& serverInformation)
+   在 System.Deployment.Application.DownloadManager.DownloadDeploymentManifest(SubscriptionStore subStore, Uri& sourceUri, TempFile& tempFile, IDownloadNotification notification, DownloadOptions options)
+   在 System.Deployment.Application.DeploymentManager.BindCore(Boolean blocking, TempFile& tempDeploy, TempDirectory& tempAppDir, FileStream& refTransaction, String& productName)
+   在 System.Deployment.Application.DeploymentManager.BindAsyncWorker()
+2016-06-26 19:56:27.5052|INFO|thread: 1|CommandLineHandler|Parsing command line arguments:
+2016-06-26 19:56:27.5182|INFO|thread: 1|CommandLineHandler|Unprocessed args: 
+2016-06-26 19:56:27.5182|INFO|thread: 1|AppInstance|Starting up as master instance of GitHub Desktop
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| #########################################
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| GitHub Desktop started. VERSION: 3.1.1.4
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| Build version: 0936e53829c91d7e0a20b2f16ba96a8875f6ec9c
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***************************************
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***                                 ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***                                 ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***        Have a problem?          ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***    Email support@github.com     ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***      and include this file      ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***                                 ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***                                 ***
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ***************************************
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| OS Version: Windows 10 10.0.10586.0 amd64
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| CLR Version: 4.0.30319.42000
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| Current culture: zh-CN
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| Environment.CurrentDirectory: C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| currentProcess.StartInfo.WorkingDirectory: 
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| Terminal Services session: no
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| Location: C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4\GitHub.exe
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| ActivationUri: https://github-windows.s3.amazonaws.com/GitHub.application
+2016-06-26 19:56:27.5478|INFO|thread: 5|StartupLogging| System.Environment.CommandLine: C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4\GitHub.exe
+2016-06-26 19:56:27.5478|INFO|thread: 1|HardwareRenderingHelper|Your video card appears to support hardware rendering. If this isn't the case and you see glitches
+2016-06-26 19:56:27.5478|INFO|thread: 1|HardwareRenderingHelper|set the GH_FORCE_SW_RENDERING environment variable to 1
+2016-06-26 19:56:27.5768|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2016-06-26 19:56:27.5768|INFO|thread: 5|GitEnvironment|PATH is C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\share\git-tfs;C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4;C:\Users\duan\AppData\Local\GitHub\lfs-amd64_1.2.0;.;D:\Program Files\Java\jdk1.7.0_79\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| =====================================================
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging|  DIAGNOSTICS                                        |
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| =====================================================
+2016-06-26 19:56:27.5778|INFO|thread: 1|App|Checking whether application is network deployed: True
+2016-06-26 19:56:27.5778|INFO|thread: 1|App|Shortcut C:\Users\duan\AppData\Local\GitHub\GitHub.appref-ms exists? True
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| Git Extracted: 'True:
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| PortableGit Dir Exists: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0'
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| Git Executable Exists: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd\git.exe'
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| ----------------------------------------------------
+2016-06-26 19:56:27.5778|INFO|thread: 5|StartupLogging| PATH: .;D:\Program Files\Java\jdk1.7.0_79\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+2016-06-26 19:56:27.5992|INFO|thread: 5|StartupLogger|Proxy information: (None)
+2016-06-26 19:56:27.5992|INFO|thread: 5|StartupLogger|Couldn't fetch creds for proxy
+2016-06-26 19:56:27.6623|INFO|thread: 1|ClickOnceAppIconHelper|Updating registry with our application icon 'C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4\Images\App.ico'
+2016-06-26 19:56:28.0617|INFO|thread: 5|PortablePackageManager|Already extracted PortableGit.7z, returning 100%
+2016-06-26 19:56:28.1170|INFO|thread: 5|MsysGitCertificateInstaller|Found certificate cache, loaded 156 certificates
+2016-06-26 19:56:28.1170|INFO|thread: 5|MsysGitCertificateInstaller|Created certificate bundle with 167 entries
+2016-06-26 19:56:28.1600|INFO|thread: 5|StartupSequence|Took 465ms to Update certificate bundle from system store
+2016-06-26 19:56:28.8713|INFO|thread: 1|CommandLineToolsExtractor|Portable Git and Git LFS are already extracted
+2016-06-26 19:56:28.8713|INFO|thread: 1|GitClient|Installing git lfs filters
+2016-06-26 19:56:28.8803|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2016-06-26 19:56:28.8803|INFO|thread: 1|GitEnvironment|PATH is C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\share\git-tfs;C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4;C:\Users\duan\AppData\Local\GitHub\lfs-amd64_1.2.0;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2016-06-26 19:56:28.8803|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd\git.exe', Args: 'lfs install --force ', Working Directory: C:\Users\duan\AppData\Local\Temp\
+2016-06-26 19:56:28.9134|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.ShellViewModel.
+2016-06-26 19:56:28.9134|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.DashboardViewModel.
+2016-06-26 19:56:29.8796|INFO|thread: 1|PortablePackageManager|Already extracted gitignore.7z, returning 100%
+2016-06-26 19:56:30.1766|WARN|thread:10|LoginCache|Could not get login for host 'GitHub.HostAddress'
+System.Collections.Generic.KeyNotFoundException: The given key 'login:null' was not present in the cache.
+2016-06-26 19:56:32.2881|INFO|thread: 1|RepositoryHost|Log in from cache for login 'DuanXiaoF' to host 'https://api.github.com/' SUCCEEDED
+2016-06-26 19:56:32.3071|INFO|thread:25|ApplicationShellInitializer|Running post login tasks. ~/.gitconfig is set up with user.name = 'fishing_snow' and user.email = 'duanxf1002@foxmail.com'
+2016-06-26 19:56:32.3121|INFO|thread:25|SshKeyHelper|Found existing SSH key pair
+2016-06-26 19:56:32.3971|INFO|thread:14|DashboardViewModel|Selected repository '/Tutorial'
+2016-06-26 19:56:32.4115|INFO|thread:14|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 1 at GitClient.cs:628
+2016-06-26 19:56:32.4115|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 1 at GitClient.cs:628 after waiting 0.0014306s
+2016-06-26 19:56:32.4115|INFO|thread:14|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation 2 at GitClient.cs:606
+2016-06-26 19:56:32.4315|INFO|thread:10|AsyncReaderWriterLock|Released concurrent scheduler for operation: 1 at GitClient.cs:628 after blocking 0.0185719s
+2016-06-26 19:56:32.4315|INFO|thread: 5|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 2 at GitClient.cs:606 after waiting 0.0177583s
+2016-06-26 19:56:32.7952|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 3 at GitClient.cs:623
+2016-06-26 19:56:32.8732|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 4 at GitClient.cs:224
+2016-06-26 19:56:32.8742|INFO|thread: 5|DashboardViewModel|Took 467ms to Create RepositoryViewModel for location C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:32.8742|INFO|thread: 5|AsyncReaderWriterLock|Released exclusive scheduler for operation: 2 at GitClient.cs:606 after blocking 0.441883s
+2016-06-26 19:56:32.8742|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 3 at GitClient.cs:623 after waiting 0.0797156s
+2016-06-26 19:56:32.8742|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 4 at GitClient.cs:224 after waiting 0.0017019s
+2016-06-26 19:56:32.8742|INFO|thread: 4|GitClient|Loading commits for repo: C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:32.8973|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 5 at RepositoryViewModel.cs:318
+2016-06-26 19:56:32.8973|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 5 at RepositoryViewModel.cs:318 after waiting 0.0007912s
+2016-06-26 19:56:32.8973|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 3 at GitClient.cs:623 after blocking 0.0236366s
+2016-06-26 19:56:32.9133|INFO|thread: 4|ConcurrentRepositoryConnection|Loaded '2' commits for repo: C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\.
+2016-06-26 19:56:32.9273|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 4 at GitClient.cs:224 after blocking 0.052309s
+2016-06-26 19:56:32.9383|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 5 at RepositoryViewModel.cs:318 after blocking 0.0409661s
+2016-06-26 19:56:33.1020|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 6 at GitClient.cs:201
+2016-06-26 19:56:33.1020|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 6 at GitClient.cs:201 after waiting 7.93E-05s
+2016-06-26 19:56:33.1020|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 7 at RepositoryModel.cs:596
+2016-06-26 19:56:33.1020|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 7 at RepositoryModel.cs:596 after waiting 8.55E-05s
+2016-06-26 19:56:33.1020|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 8 at RepositoryModel.cs:596
+2016-06-26 19:56:33.1160|INFO|thread: 9|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 9 at NewPullRequestViewModel.cs:246
+2016-06-26 19:56:33.1160|INFO|thread: 9|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 10 at GitClient.cs:290
+2016-06-26 19:56:33.1160|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 7 at RepositoryModel.cs:596 after blocking 0.0171042s
+2016-06-26 19:56:33.1160|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 8 at RepositoryModel.cs:596 after waiting 0.0126597s
+2016-06-26 19:56:33.1250|INFO|thread:10|AsyncReaderWriterLock|Released concurrent scheduler for operation: 6 at GitClient.cs:201 after blocking 0.0229437s
+2016-06-26 19:56:33.1250|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 9 at NewPullRequestViewModel.cs:246 after waiting 0.008716s
+2016-06-26 19:56:33.1250|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 10 at GitClient.cs:290 after waiting 0.0056664s
+2016-06-26 19:56:33.1250|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 8 at RepositoryModel.cs:596 after blocking 0.0055753s
+2016-06-26 19:56:33.1250|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2016-06-26 19:56:33.1250|INFO|thread: 5|GitEnvironment|PATH is C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\share\git-tfs;C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4;C:\Users\duan\AppData\Local\GitHub\lfs-amd64_1.2.0;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2016-06-26 19:56:33.1250|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2016-06-26 19:56:33.1250|INFO|thread:16|ConcurrentRepositoryConnection|Loaded '2' commits for repo: C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\.
+2016-06-26 19:56:33.1250|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 9 at NewPullRequestViewModel.cs:246 after blocking 0.0117982s
+2016-06-26 19:56:33.2501|INFO|thread: 5|ConcurrentRepositoryConnection|Took 77ms to git status
+2016-06-26 19:56:33.2501|INFO|thread: 5|ConcurrentRepositoryConnection|Took 77ms to git status and parse output
+2016-06-26 19:56:33.2501|INFO|thread: 5|NewCommitViewModel|Took 140ms to load files for C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:33.2501|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 10 at GitClient.cs:290 after blocking 0.1346985s
+2016-06-26 19:56:33.5649|INFO|thread: 4|SshProcessManager|Starting ssh-agent.exe
+2016-06-26 19:56:33.5649|INFO|thread: 4|PortablePackageManager|Already extracted lfs-amd64.7z, returning 100%
+2016-06-26 19:56:33.9929|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 11 at GitClient.cs:611
+2016-06-26 19:56:33.9929|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 11 at GitClient.cs:611 after waiting 5.22E-05s
+2016-06-26 19:56:33.9929|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 11 at GitClient.cs:611 after blocking 0.002007s
+2016-06-26 19:56:34.4292|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 12 at BranchesViewModel.cs:356
+2016-06-26 19:56:34.4292|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 12 at BranchesViewModel.cs:356 after waiting 7.06E-05s
+2016-06-26 19:56:34.4292|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 13 at RepositoryViewModel.cs:318
+2016-06-26 19:56:34.4292|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 13 at RepositoryViewModel.cs:318 after waiting 2.23E-05s
+2016-06-26 19:56:34.4292|INFO|thread:10|AsyncReaderWriterLock|Released concurrent scheduler for operation: 12 at BranchesViewModel.cs:356 after blocking 0.0069898s
+2016-06-26 19:56:34.4952|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 13 at RepositoryViewModel.cs:318 after blocking 0.0631151s
+2016-06-26 19:56:34.5483|INFO|thread: 1|NewCommitViewModel|Took 1288ms to render file list for C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:34.5483|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 14 at RepositoryViewModel.cs:318
+2016-06-26 19:56:34.5483|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 14 at RepositoryViewModel.cs:318 after waiting 2.64E-05s
+2016-06-26 19:56:34.5483|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 14 at RepositoryViewModel.cs:318 after blocking 1.43E-05s
+2016-06-26 19:56:34.5483|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 15 at RepositoryViewModel.cs:318
+2016-06-26 19:56:34.5483|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 15 at RepositoryViewModel.cs:318 after waiting 2.2E-05s
+2016-06-26 19:56:34.5623|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 15 at RepositoryViewModel.cs:318 after blocking 0.004414s
+2016-06-26 19:56:34.5623|INFO|thread:14|DashboardViewModel|Selected repository '/Tutorial'
+2016-06-26 19:56:34.5623|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 16 at GitClient.cs:201
+2016-06-26 19:56:34.5623|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 16 at GitClient.cs:201 after waiting 2.36E-05s
+2016-06-26 19:56:34.5623|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 17 at RepositoryModel.cs:596
+2016-06-26 19:56:34.5623|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 17 at RepositoryModel.cs:596 after waiting 7.4E-06s
+2016-06-26 19:56:34.5623|INFO|thread: 9|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 18 at GitClient.cs:290
+2016-06-26 19:56:34.5623|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 17 at RepositoryModel.cs:596 after blocking 0.0032427s
+2016-06-26 19:56:34.5623|INFO|thread: 9|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 18 at GitClient.cs:290 after waiting 0.0001138s
+2016-06-26 19:56:34.5623|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 16 at GitClient.cs:201 after blocking 0.0043322s
+2016-06-26 19:56:34.5773|INFO|thread: 9|GitEnvironment|Process set up with this SSH Agent info: (null):(null)
+2016-06-26 19:56:34.5773|INFO|thread: 9|GitEnvironment|PATH is C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\share\git-tfs;C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4;C:\Users\duan\AppData\Local\GitHub\lfs-amd64_1.2.0;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2016-06-26 19:56:34.5773|INFO|thread: 9|ProcessWrapper|Starting: Process - FileName: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2016-06-26 19:56:34.7894|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 19 at GitClient.cs:611
+2016-06-26 19:56:34.7894|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 19 at GitClient.cs:611 after waiting 6.46E-05s
+2016-06-26 19:56:34.7894|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 19 at GitClient.cs:611 after blocking 0.0018505s
+2016-06-26 19:56:36.8921|INFO|thread:25|GitEnvironment|Process set up with this SSH Agent info: 3332:/tmp/ssh-d416xwd5gJW4/agent.1848
+2016-06-26 19:56:36.8921|INFO|thread:25|GitEnvironment|PATH is C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\share\git-tfs;C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4;C:\Users\duan\AppData\Local\GitHub\lfs-amd64_1.2.0;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2016-06-26 19:56:36.8921|INFO|thread:25|ProcessWrapper|Starting: Process - FileName: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin\ssh-add.exe', Args: '"C:\Users\duan\.ssh\github_rsa"', Working Directory: C:\Users\duan\AppData\Local\Temp\
+2016-06-26 19:56:37.0922|INFO|thread: 5|ConcurrentRepositoryConnection|Took 164ms to git status
+2016-06-26 19:56:37.0922|INFO|thread: 5|ConcurrentRepositoryConnection|Took 164ms to git status and parse output
+2016-06-26 19:56:37.0932|INFO|thread: 5|NewCommitViewModel|Took 2519ms to load files for C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:37.0932|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 18 at GitClient.cs:290 after blocking 2.5198551s
+2016-06-26 19:56:37.1683|INFO|thread: 1|NewCommitViewModel|Took 75ms to render file list for C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:37.1683|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 20 at RepositoryViewModel.cs:318
+2016-06-26 19:56:37.1683|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 20 at RepositoryViewModel.cs:318 after waiting 5.72E-05s
+2016-06-26 19:56:37.1733|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 20 at RepositoryViewModel.cs:318 after blocking 0.0051022s
+2016-06-26 19:56:37.4226|WARN|thread:17|TutorialPopup|Error Aborted loading url http://github-app/comparison-graph/tutorial.html: 
+2016-06-26 19:56:37.6433|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 21 at GitClient.cs:404
+2016-06-26 19:56:37.6433|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 21 at GitClient.cs:404 after waiting 5.75E-05s
+2016-06-26 19:56:37.6433|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 3332:/tmp/ssh-d416xwd5gJW4/agent.1848
+2016-06-26 19:56:37.6433|INFO|thread:16|GitEnvironment|PATH is C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\bin;C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\usr\share\git-tfs;C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4;C:\Users\duan\AppData\Local\GitHub\lfs-amd64_1.2.0;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2016-06-26 19:56:37.6433|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\duan\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 19ce9d8ff1fccf510df82d99a65f48c649b7becd 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2016-06-26 19:56:37.7144|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 22 at ICommittedFileForklift.cs:95
+2016-06-26 19:56:37.7294|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 23 at ICommittedFileForklift.cs:95
+2016-06-26 19:56:37.7824|INFO|thread: 4|SoftwareUpdateViewModel|Checking for new version
+2016-06-26 19:56:37.7824|INFO|thread: 9|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 22 at ICommittedFileForklift.cs:95 after waiting 0.07181s
+2016-06-26 19:56:37.8034|INFO|thread:10|AsyncReaderWriterLock|Released concurrent scheduler for operation: 21 at GitClient.cs:404 after blocking 0.1598402s
+2016-06-26 19:56:37.8034|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 23 at ICommittedFileForklift.cs:95 after waiting 0.0743402s
+2016-06-26 19:56:37.8034|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 22 at ICommittedFileForklift.cs:95 after blocking 0.0213777s
+2016-06-26 19:56:37.8034|INFO|thread:10|AsyncReaderWriterLock|Released concurrent scheduler for operation: 23 at ICommittedFileForklift.cs:95 after blocking 0.004604s
+2016-06-26 19:56:38.2542|INFO|thread: 1|SelectedCommitViewModel|Took 617ms to load files for commit 9fc3ef2 in repo C:\Users\duan\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2016-06-26 19:56:38.7691|ERROR|thread: 5|SoftwareUpdateViewModel|Checking for application update failed.
+System.Deployment.Application.DeploymentDownloadException: 下载 http://github-windows.s3.amazonaws.com/GitHub.application 未成功。 ---> System.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 System.Deployment.Application.SystemNetDownloader.DownloadSingleFile(DownloadQueueItem next)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Deployment.Application.SystemNetDownloader.DownloadSingleFile(DownloadQueueItem next)
+   在 System.Deployment.Application.SystemNetDownloader.DownloadAllFiles()
+   在 System.Deployment.Application.FileDownloader.Download(SubscriptionState subState)
+   在 System.Deployment.Application.DownloadManager.DownloadManifestAsRawFile(Uri& sourceUri, String targetPath, IDownloadNotification notification, DownloadOptions options, ServerInformation& serverInformation)
+   在 System.Deployment.Application.DownloadManager.DownloadDeploymentManifestDirect(SubscriptionStore subStore, Uri& sourceUri, TempFile& tempFile, IDownloadNotification notification, DownloadOptions options, ServerInformation& serverInformation)
+   在 System.Deployment.Application.DownloadManager.DownloadDeploymentManifest(SubscriptionStore subStore, Uri& sourceUri, TempFile& tempFile, IDownloadNotification notification, DownloadOptions options)
+   在 System.Deployment.Application.DeploymentManager.BindCore(Boolean blocking, TempFile& tempDeploy, TempDirectory& tempAppDir, FileStream& refTransaction, String& productName)
+   在 System.Deployment.Application.DeploymentManager.BindAsyncWorker()
+2016-06-26 19:56:39.7994|INFO|thread: 9|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 24 at GitClient.cs:497
+2016-06-26 19:56:39.7994|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 24 at GitClient.cs:497 after waiting 7.15E-05s
+2016-06-26 19:56:39.8284|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 24 at GitClient.cs:497 after blocking 0.0282086s
+2016-06-26 19:57:05.2843|INFO|thread:10|ProcessWrapper|Starting: Process - FileName: 'C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4\7za.exe', Args: 'x -y "-oC:\Users\duan\AppData\Local\GitHub\znhjdf2c.qyp.deleteme" "C:\Users\duan\AppData\Local\Apps\2.0\R0TOEMV4.51O\KNCXB214.48D\gith..tion_317444273a93ac29_0003.0001_cbe40ecbe3e419d4\tutorial.7z"', Working Directory: 
+2016-06-26 19:57:05.3237|INFO|thread:10|PortablePackageManager|Extracting tutorial.7z is (so far) successful
+2016-06-26 19:57:05.3954|INFO|thread:16|PortablePackageManager|Extracted package successfully: tutorial.7z
+2016-06-26 19:57:09.2650|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.AboutViewModel.
+2016-06-26 19:57:09.2650|INFO|thread: 1|SoftwareUpdateViewModel|Checking for new version
